@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="goodvibesform.css" />
+    <title>Good Vibes Form</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Good Vibes Form</h1>
+
+    <div class="container">
+      <form action="" id="form" class="container">
+        <br /><br />
+        <p style="font-size: 24px; text-align: center">
+          Tell us something positive that happened to you today.
+        </p>
+        <br /><br />
+
+        <div class="row">
+          <div class="column">
+            <div class="group1">
+              <label for="name" class="left" style="margin: 5.3px 20px"
+                >Name</label
+              >
+              <br />
+              <label for="email" class="left" style="margin: 5.3px 20px"
+                >Email</label
+              >
+              <br />
+              <label for="scale" class="left" style="margin: 5.3px 20px"
+                >On a scale of 1-10,how good was it?</label
+              >
+              <br />
+              <label for="select" class="left" style="margin: 5.3px 20px"
+                >What did it happen?</label
+              >
+              <br />
+              <label class="left" style="margin: 5.3px 20px"
+                >At what time of day did it happen?</label
+              >
+              <br /><br /><br /><br />
+
+              <label class="left" style="margin: 5.3px 20px"
+                >What emotions did you experience?</label
+              >
+              <label class="left" style="margin: 5.3px 20px"
+                >(Select all that apply)</label
+              >
+              <br /><br /><br /><br />
+              <div style="height: 35px"></div>
+              <label for="text" class="left" style="margin: 5.3px 20px"
+                >Please describe your postive experience.</label
+              >
+              <br /><br />
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="group2">
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                style="width: 250px; height: 25px"
+              />
+              <br /><br />
+
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email address"
+                style="width: 250px; height: 25px"
+              />
+              <br /><br />
+
+              <input
+                type="number"
+                id="scale"
+                min="1"
+                max="10"
+                style="width: 250px; height: 25px"
+                placeholder="Enter a number between 1 and 10"
+              />
+              <br /><br />
+
+              <select id="select" style="width: 125px; height: 30px">
+                <option>At home</option>
+                <option>On my commute</option>
+                <option>At work</option>
+                <option>On the street</option>
+                <option>Other</option>
+              </select>
+              <br /><br /><br />
+              <div id="radios">
+                <input type="radio" id="radio1" />
+                <label for="radio1" class="notlabel">Morning</label>
+                <br />
+                <div style="height: 7px"></div>
+                <input type="radio" id="radio2" />
+                <label for="radio2" class="notlabel">Afternoon</label>
+                <br />
+                <div style="height: 7px"></div>
+                <input type="radio" id="radio3" />
+                <label for="radio3" class="notlabel">Evening</label>
+                <br /><br />
+              </div>
+
+              <div id="checks">
+                <input type="checkbox" id="check1" />
+                <label for="check1" class="notlabel">Excited</label>
+                <br />
+                <div style="height: 7px"></div>
+                <input type="checkbox" id="check2" />
+                <label for="check2" class="notlabel">Humbled</label>
+                <br />
+                <div style="height: 7px"></div>
+                <input type="checkbox" id="check3" />
+                <label for="check3" class="notlabel">Elated</label>
+                <br />
+                <div style="height: 7px"></div>
+                <input type="checkbox" id="check4" />
+                <label for="check4" class="notlabel">Loved</label>
+                <br />
+                <div style="height: 7px"></div>
+                <input type="checkbox" id="check5" />
+                <label for="check5" class="notlabel">Enthusiastic</label>
+                <br /><br />
+              </div>
+              <br />
+              <textarea
+                id="text"
+                cols="1"
+                rows="1"
+                style="height: 50px; width: 300px"
+                placeholder="Enter your experience here..."
+              ></textarea>
+              <br /><br />
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <button id="button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
